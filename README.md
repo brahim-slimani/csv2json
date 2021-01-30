@@ -2,7 +2,7 @@
 The Library takes care the input data as file or csv parsed to String
 
 ## Installation
-`npm install jwt-decoder-claims` or `yarn add jwt-decoder-claims`
+`npm install convert-csv2json` or `yarn add convert-csv2json`
 
 ## Usage
 ```javascript
@@ -37,22 +37,19 @@ console.info(csvTojson);
 // ]
 ```
 
-**Important!** In case of malformed token it will throw an exception of invalid token error.<br/>
-It is recommanded to combine the decoding function with a Promise object or add try/catch block
-<br/>
-
-**Convert csv data file into json**
+**Convert csv data file into json**<br/>
 You have to pass the target event files[0] as parameter within the delimiter symbol once the csv file has been uploaded through chosen file
 ```javascript
 import parser from "convert-csv2json";
 
-//The function use .then() implicitly to return a promise 
+//use .then() implicitly to return a promise 
 parser.csvFile2json(e.target.files[0], ";").then((result) => {
     console.log(result);
 }error => {
     console.error(error);
 });
 ```
+**Important!** In case of invalid csv file it will throw an error of csv file exception.<br/>
 
 ## For CommonJS usage
 ```javascript
@@ -62,11 +59,5 @@ const parser = require('convert-csv2json');
 ## Github repository
 If you have any contribution request, feature or if you found a bug or any issue please report them to this [github repository](https://github.com/slimani-ibrahim/csv2json.git)
 
-<!-- ## Demo application
-jwt-decoder-claims has been used to decode the JWTs in this simple tool [checkout here](https://slimani-ibrahim.github.io/jwt-decoder-tool/)<br/>
-Here is the [github repository](https://github.com/Slimani-Ibrahim/jwt-decoder-tool) for any feature or contribution. -->
-
 ## Author
 [Ibrahim Slimani](https://slimani-ibrahim.github.io/profile)
-    js, csv, json
-}
