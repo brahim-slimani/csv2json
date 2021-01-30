@@ -16,7 +16,7 @@ const csv2json = (csv, delimiter = ';') => {
     });
 }
 
-const csvFile2json = (file, delimiter) = new Promise((resolve, reject) => {
+const csvFile2json = (file, delimiter) => new Promise((resolve, reject) => {
     try {
         if (file.name.split('.').pop() === "csv") {
             var reader = new FileReader();
