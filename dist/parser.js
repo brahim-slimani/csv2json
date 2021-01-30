@@ -9,3 +9,20 @@ const csv2json = (csv, delimiter = ';') => {
             (object[current.trim()] = values[index], object), {});
     });
 }
+
+const csvFile2json = (file, delimiter) = new Promise((resolve, reject) => {
+    try {
+        if (file.name.split('.').pop() === "csv") {
+            var reader = new FileReader();
+            reader.readAsText(file);
+            reader.onload = () => {
+                let csvToString = reader.result;
+                resolve(csv2json(csvToString, delimiter));
+            };
+        } else {
+            reject(error);
+        }
+    } catch (error) {
+        reject(error);
+    }
+});
