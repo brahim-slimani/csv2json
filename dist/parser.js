@@ -1,3 +1,9 @@
+function InvalidCSVFileError(message) {
+    this.message = message;
+}
+
+InvalidCSVFileError.prototype = new Error();
+InvalidCSVFileError.prototype.name = "InvalidCSVFileException";
 
 
 const csv2json = (csv, delimiter = ';') => {
@@ -20,9 +26,9 @@ const csvFile2json = (file, delimiter) = new Promise((resolve, reject) => {
                 resolve(csv2json(csvToString, delimiter));
             };
         } else {
-            reject(error);
+            reject(new InvalidCSVFileError("Invalid file format exception"));
         }
     } catch (error) {
-        reject(error);
+        reject(new InvalidCSVFileError("Unhandled exception error"));
     }
 });
