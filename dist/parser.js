@@ -32,3 +32,7 @@ const csvFile2json = (file, delimiter) = new Promise((resolve, reject) => {
         reject(new InvalidCSVFileError("Unhandled exception error"));
     }
 });
+
+module.exports = {
+    csv2json, csvFile2json
+}
