@@ -37,7 +37,7 @@ console.info(csvTojson);
 // ]
 ```
 
-**Convert csv data file into json**<br/>
+**Convert CSV data file into JSON**<br/>
 You have to pass the target event files[0] as parameter within the delimiter symbol once the csv file has been uploaded through chosen file
 ```javascript
 import parser from "convert-csv2json";
