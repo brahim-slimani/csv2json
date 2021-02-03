@@ -12,7 +12,7 @@ const csv2json = (csv, delimiter = ';') => {
     return rows.map(row => {
         const values = row.split(delimiter);
         return titles.reduce((object, current, index) =>
-            (object[current.trim()] = values[index], object), {});
+            (object[current.trim()] = values[index].trim(), object), {});
     });
 }
 
