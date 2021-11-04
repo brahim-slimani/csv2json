@@ -1,7 +1,7 @@
 {
   "name": "convert-csv2json",
   "version": "1.1.0",
-  "description": "JS Library to convert csv data into JSON objects, it takes care the input data as file or csv parsed to String",
+  "description": "JS Library that allows to convert csv data into JSON objects, it takes care the input data as file or csv parsed to String",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
