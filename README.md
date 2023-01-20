@@ -60,4 +60,4 @@ const parser = require('convert-csv2json');
 If you have any contribution request, feature or if you found a bug or any issue please report them to this [github repository](https://github.com/brahim-slimani/csv2json.git)
 
 ## Author
-[Ibrahim Slimani](https://brahim-slimani.github.io/profile)
+[Brahim Slimani](https://brahim-slimani.github.io/profile)
