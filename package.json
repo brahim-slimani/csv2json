@@ -1,6 +1,6 @@
 {
   "name": "convert-csv2json",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "JS Library that allows to convert csv data into JSON objects, it takes care the input data as file or csv parsed to String",
   "main": "index.js",
   "scripts": {
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slimani-ibrahim/csv2json.git"
+    "url": "git+https://github.com/brahim-slimani/csv2json.git"
   },
   "keywords": [
     "js",
     "csv",
     "json"
   ],
-  "author": "Ibrahim SLIMANI",
+  "author": "Brahim SLIMANI",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/slimani-ibrahim/csv2json/issues"
+    "url": "https://github.com/brahim-slimani/csv2json/issues"
   },
-  "homepage": "https://github.com/slimani-ibrahim/csv2json#readme"
+  "homepage": "https://github.com/brahim-slimani/csv2json#readme"
 }
